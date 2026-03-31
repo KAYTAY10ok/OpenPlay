@@ -1,2 +1,2 @@
 # OpenPlay
-a Web with + 100 app and game
+a website with + 100 app and game
