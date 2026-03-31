@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - Jeux & Apps Gratuits</title>
+    <meta name="description" content="Telechargez gratuitement des jeux et applications open-source. 200+ logiciels gratuits et securises.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Background effects -->
+    <div class="bg-fx">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+
+    <div class="wrap">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <div class="logo-icon">&#9889;</div>
+                <span class="logo-text">GameVault</span>
+            </div>
+            <div class="search">
+                <span class="search-ico">&#128269;</span>
+                <input type="text" id="searchInput" placeholder="Rechercher un jeu ou une app...">
+            </div>
+            <div class="stats">
+                <div>
+                    <div class="stat-n" id="totalCount">0</div>
+                    <div class="stat-l">Disponibles</div>
+                </div>
+                <div>
+                    <div class="stat-n" id="dlCount">0</div>
+                    <div class="stat-l">Downloads</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Bienvenue sur <span>GameVault</span></h1>
+            <p>Plus de 200 jeux et applications gratuits, open-source et 100% securises. Cliquez, telechargez, profitez.</p>
+        </section>
+
+        <!-- Type toggle -->
+        <div class="type-toggle">
+            <button class="tbtn on" data-type="all">&#127760; Tout</button>
+            <button class="tbtn" data-type="jeu">&#127918; Jeux</button>
+            <button class="tbtn" data-type="app">&#128187; Applications</button>
+        </div>
+
+        <!-- Genre filters -->
+        <div class="filters" id="filters"></div>
+
+        <!-- Grid header -->
+        <div class="grid-top">
+            <h2 id="title">Tous</h2>
+            <span id="count"></span>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="grid" id="grid"></div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 GameVault &mdash; Tous les logiciels sont gratuits et open-source. Aucune donnee collectee.</p>
+        </footer>
+
+    </div>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop">&#8593;</button>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
